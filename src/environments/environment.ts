@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  movieUrl: 'api/movies/movies.json'
+ // movieUrl: 'api/movies/movies.json'
+  movieUrl: 'http://localhost:7071/api/movies'
 };
 
 /*
