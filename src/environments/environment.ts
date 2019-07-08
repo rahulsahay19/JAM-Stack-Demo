@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  movieUrl: 'api/movies/movies.json'
+  //movieUrl: 'api/movies/movies.json'
+  movieUrl: 'https://ngjamstack.azurewebsites.net/api/movies/'
 };
 
 /*

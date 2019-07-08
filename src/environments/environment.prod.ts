@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  movieUrl: 'api/movies/'
+  movieUrl: 'https://ngjamstack.azurewebsites.net/api/movies/'
 };
