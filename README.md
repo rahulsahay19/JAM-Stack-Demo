@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/rahulsahay19/Jam-Stack-Demo/_apis/build/status/Jam-Stack-Demo?branchName=master)](https://dev.azure.com/rahulsahay19/Jam-Stack-Demo/_build/latest?definitionId=9&branchName=master)
+
 This app is built using Angular on the front end and Azure Functions on the back
 end with data coming from Azure Cosmos DB.
 
