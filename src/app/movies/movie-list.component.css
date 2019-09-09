@@ -1,4 +1,21 @@
 thead {
-    color: #337AB7;
-  }
-  
+  color: #DB922B;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.table thead th {
+  border-bottom: 1px solid #DB922B;
+}
+
+th,
+td {
+  border: none;
+}
+
+.card,
+table,
+tbody {
+  background: #061A2E;
+  color: white;
+}

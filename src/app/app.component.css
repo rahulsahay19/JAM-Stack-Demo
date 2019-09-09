@@ -1,7 +1,17 @@
 .nav-link {
-    font-size: large;
-  }
-  
-  [role=main]{
-    margin: 40px 20px 0;
-  }
+  font-size: large;
+}
+
+[role=main] {
+  margin: 40px 20px 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: 1rem;
+  padding: 2rem;
+}
