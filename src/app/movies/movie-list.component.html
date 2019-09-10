@@ -1,48 +1,38 @@
 <div class="card">
-    <div class="card-header">
-      {{pageTitle}}
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-2">Filter by:</div>
-        <div class="col-md-4">
-          <input type="text"
-                 [(ngModel)]="listFilter" />
-        </div>
-      </div>
-      <div class="row"
-           *ngIf="listFilter">
-        <div class="col-md-6">
-          <h4>Filtered by: {{listFilter}}</h4>
-        </div>
-      </div>
-      <div class="table-responsive">
-        <table class="table"
-               *ngIf="movies && movies.length">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Director Name</th>
-              <th>Description</th>
-              <th>Genre</th>
-              <th>Reviews Count</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let movie of filteredMovies">
-              <td>{{ movie.name }}</td>
-              <td>{{ movie.directorName }}</td>
-              <td>{{ movie.longDescription }}</td>
-              <td>{{ movie.genre }}</td>
-              <td>{{ movie.reviewsCount }}</td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <!-- <div class="col-md-2">Filter by:</div> -->
+      <div class="col-md-6">
+        <input class="form-control" type="text" placeholder="Filter" [(ngModel)]="listFilter" />
       </div>
     </div>
+    <div class="table-responsive">
+      <table class="table" *ngIf="movies && movies.length">
+        <thead>
+          <tr>
+            <th>Movie</th>
+            <th>Director</th>
+            <th>Description</th>
+            <th>Genre</th>
+            <th>Reviews</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let movie of filteredMovies">
+            <td>{{ movie.name }}</td>
+            <td>{{ movie.directorName }}</td>
+            <td>{{ movie.longDescription }}</td>
+            <td>{{ movie.genre }}</td>
+            <td>{{ movie.reviewsCount }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <div *ngIf="errorMessage"
-       class="alert alert-danger">
-    Error: {{ errorMessage }}
-  </div>
-  
+</div>
+<div *ngIf="errorMessage" class="alert alert-danger">
+  Error: {{ errorMessage }}
+</div>

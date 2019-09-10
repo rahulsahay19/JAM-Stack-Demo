@@ -3,6 +3,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  font: 0.8rem 'Oxygen', sans-serif;
+  background: #1C2431;
+  color: white;
+}
+
+
 div.card-header {
  font-size: large;
 }
